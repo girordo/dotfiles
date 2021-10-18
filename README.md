@@ -1,5 +1,5 @@
 <section align="center">
-<img href="https://media.giphy.com/media/f3IcBYfjyZto1cf6M2/giphy.gif" />
+<img src="https://media.giphy.com/media/f3IcBYfjyZto1cf6M2/giphy.gif" alt="Evangelion gif to look cool"/>
 <h1>𝕬𝖇𝖔𝖚𝖙</h1>
 
 𝚃𝚑𝚒𝚜 𝚒𝚜 𝚊 𝚛𝚎𝚙𝚘𝚜𝚒𝚝𝚘𝚛𝚢 𝚠𝚒𝚝𝚑 𝚖𝚢 𝚍𝚘𝚝𝚏𝚒𝚕𝚎𝚜
