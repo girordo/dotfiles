@@ -1,6 +1,6 @@
 <section align="center">
 
-<h1 style="font-size: 40px;">𝕬𝖇𝖔𝖚𝖙</h1>
+<h1 style=font-size: 200px;>𝕬𝖇𝖔𝖚𝖙</h1>
 
 Repository with my dotfiles
 
