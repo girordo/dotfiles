@@ -1,10 +1,10 @@
 <section align="center">
 
-# 𝕬𝖇𝖔𝖚𝖙
+<h1 style="font-size: 40px;">𝕬𝖇𝖔𝖚𝖙</h1>
 
 Repository with my dotfiles
 
-# Screenshots
+# 𝕾𝖈𝖗𝖊𝖊𝖓𝖘𝖍𝖔𝖙𝖘
 
 ## neofetch
 
