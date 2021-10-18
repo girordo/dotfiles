@@ -4,7 +4,7 @@
 
 Repository with my dotfiles
 
-<h1>𝕾𝖈𝖗𝖊𝖊𝖓𝖘𝖍𝖔𝖙𝖘<h1>
+<h1>𝕾𝖈𝖗𝖊𝖊𝖓𝖘𝖍𝖔𝖙𝖘</h1>
 
 <h2>𝖓𝖊𝖔𝖋𝖊𝖙𝖈𝖍</h2>
 
