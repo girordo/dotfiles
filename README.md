@@ -8,10 +8,10 @@ Repository with my dotfiles
 
 ## neofetch
 
-![neofetch](https://github.com/girordo/dotfiles/blob/main/neofetch.jpg?raw=true)
+![neofetch](https://github.com/girordo/dotfiles/blob/main/screenshots/neofetch.jpg?raw=true)
 
 ## kitty terminal
 
-![kitty](https://github.com/girordo/dotfiles/blob/main/kitty.jpg?raw=true)
+![kitty](https://github.com/girordo/dotfiles/blob/main/screenshots/kitty.jpg?raw=true)
 
 </section>
