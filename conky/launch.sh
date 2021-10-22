@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /usr/bin/env zsh
 
 # Path to directory containing conky themes
 themes_path=$HOME/.config/conky/themes
