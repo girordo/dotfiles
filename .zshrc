@@ -138,7 +138,7 @@ export NVM_DIR="$HOME/.nvm"
 
 #neofetch
 
-fortune | cowsay
+#fortune | cowsay
 
 #aliases
 alias bat='batcat'
