@@ -8,8 +8,7 @@ killall conky
 sleep 1
 
 # splitted (solid)
-conky -c $themes_path/splitted/dark-splitted-top.conf & conky -c $themes_path/splitted/dark-splitted-middle.conf & conky -c $themes_path/splitted/dark-splitted-bottom.conf
-
+# conky -c $themes_path/splitted/dark-splitted-top.conf & conky -c $themes_path/splitted/dark-splitted-middle.conf & conky -c $themes_path/splitted/dark-splitted-middle.conf
 # splitted (clear)
 # conky -c $themes_path/splitted-clear/dark-splitted-top-clear.conf & conky -c $themes_path/splitted-clear/dark-splitted-middle-clear.conf & conky -c $themes_path/splitted-clear/dark-splitted-bottom-clear.conf
 
@@ -20,7 +19,7 @@ conky -c $themes_path/splitted/dark-splitted-top.conf & conky -c $themes_path/sp
 # conky -c $themes_path/dual-clear/dark-dual-clear-0.conf & conky -c $themes_path/dual-clear/dark-dual-clear-1.conf
 
 # minimal (solid)
-# conky -c $themes_path/minimal/dark-minimal.conf
+ conky -c $themes_path/minimal/dark-minimal.conf
 
 # minimal (clear)
 # conky -c $themes_path/minimal-clear/dark-minimal-clear.conf
