@@ -15,8 +15,6 @@
 
 ![kitty](https://github.com/girordo/dotfiles/blob/main/screenshots/kitty.png?raw=true)
 
-</section>
-
 <h2>𝖈𝖔𝖓𝖐𝖞</h2>
 
 ![conky](https://github.com/girordo/dotfiles/blob/main/screenshots/conky.png?raw=true)
