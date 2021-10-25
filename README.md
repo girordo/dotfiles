@@ -19,12 +19,8 @@
 
 ![conky](https://github.com/girordo/dotfiles/blob/main/screenshots/conky.png?raw=true)
 
-</section>
-
-<section>
-
 <h2>𝖜𝖍𝖆𝖙 𝖙𝖔 𝖉𝖔 𝖓𝖊𝖝𝖙</h2>
-```bash
-install  btop?, gtop?, spicetify-cli?
-```
+
+install btop?, gtop?, spicetify-cli?, neovim?
+
 </section>
