@@ -1,5 +1,5 @@
 <section align="center">
-<img src="https://media.giphy.com/media/f3IcBYfjyZto1cf6M2/giphy.gif" width="40%" alt="Evangelion gif to look cool"/>
+<img src="https://github.com/girordo/dotfiles/blob/main/assets/dotfiles.png?raw=true" alt="dotfiles logo"/>
 <h1>𝕬𝖇𝖔𝖚𝖙</h1>
 
 𝚃𝚑𝚒𝚜 𝚒𝚜 𝚊 𝚛𝚎𝚙𝚘𝚜𝚒𝚝𝚘𝚛𝚢 𝚠𝚒𝚝𝚑 𝚖𝚢 𝚍𝚘𝚝𝚏𝚒𝚕𝚎𝚜<br/>
