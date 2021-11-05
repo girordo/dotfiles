@@ -15,12 +15,12 @@
 
 ![kitty](https://github.com/girordo/dotfiles/blob/main/screenshots/kitty.png?raw=true)
 
-</section>
+<h2>𝖈𝖔𝖓𝖐𝖞</h2>
 
-<section>
+![conky](https://github.com/girordo/dotfiles/blob/main/screenshots/conky.png?raw=true)
 
 <h2>𝖜𝖍𝖆𝖙 𝖙𝖔 𝖉𝖔 𝖓𝖊𝖝𝖙</h2>
-```bash
-install bat, btop?, gtop?, spicetify-cli?
-```
+
+install btop?, gtop?, spicetify-cli?, neovim?
+
 </section>

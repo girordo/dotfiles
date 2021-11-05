@@ -138,4 +138,13 @@ export NVM_DIR="$HOME/.nvm"
 
 #neofetch
 
-fortune | cowsay
+#fortune | cowsay
+
+#aliases
+alias bat='batcat'
+alias ll='lsd -la'
+alias lld='lsd -la --date=relative --group-dirs=first'
+alias lle='lsd -la --date=relative --sort=extension --group-dirs=first'
+alias la='lsd -a'
+alias l='lsd -l'
+alias lt='lsd --tree'
