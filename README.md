@@ -21,6 +21,8 @@
 
 <h2>𝖜𝖍𝖆𝖙 𝖙𝖔 𝖉𝖔 𝖓𝖊𝖝𝖙</h2>
 
-install btop?, gtop?, spicetify-cli?, neovim?
+install btop?, gtop?, neovim?
+
+spicetify in progress
 
 </section>
