@@ -1,8 +1,5 @@
 <section align="center">
 <img src="https://github.com/girordo/dotfiles/blob/main/assets/dotfiles.png?raw=true" alt="dotfiles logo"/>
-<a href="https://gitmoji.dev">
-  <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
-</a>
 <h1>𝕬𝖇𝖔𝖚𝖙</h1>
 
 𝚃𝚑𝚒𝚜 𝚒𝚜 𝚊 𝚛𝚎𝚙𝚘𝚜𝚒𝚝𝚘𝚛𝚢 𝚠𝚒𝚝𝚑 𝚖𝚢 𝚍𝚘𝚝𝚏𝚒𝚕𝚎𝚜<br/>
@@ -27,5 +24,8 @@
 install btop?, gtop?, neovim?
 
 spicetify in progress
-
+  
+<a href="https://gitmoji.dev">
+  <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+</a>
 </section>
