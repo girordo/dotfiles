@@ -18,13 +18,21 @@
 <h2>𝖈𝖔𝖓𝖐𝖞</h2>
 
 ![conky](https://github.com/girordo/dotfiles/blob/main/screenshots/conky.png?raw=true)
+  
+<h2>𝖎𝖓𝖘𝖙𝖆𝖑𝖑𝖊𝖉</h2>
+bat
+ranger
+conky
+lsd
+kitty
+neofetch
 
 <h2>𝖜𝖍𝖆𝖙 𝖙𝖔 𝖉𝖔 𝖓𝖊𝖝𝖙</h2>
 
-install btop?, gtop?, neovim?
+neovim?
 
-spicetify in progress
-  
+explain how to install lsd (hehe)
+
 <a href="https://gitmoji.dev">
   <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
 </a>
