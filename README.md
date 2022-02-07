@@ -4,7 +4,6 @@
 <a href="https://gitmoji.dev">
   <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
 </a>
-![[License: MIT](https://img.shields.io/badge/License-MIT-green.svg)(https://opensource.org/licenses/MIT)]
 
 <h1>𝕬𝖇𝖔𝖚𝖙</h1>
 
