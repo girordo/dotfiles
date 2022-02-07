@@ -26,7 +26,7 @@
 
 <h2>𝖎𝖓𝖘𝖙𝖆𝖑𝖑𝖊𝖉</h2>
 
-![bat](https://github.com/sharkdp/bat)
+!(bat(https://github.com/sharkdp/bat))
 ![conky](https://github.com/brndnmtthws/conky)
 ![curl](https://github.com/curl/curl)
 ![lsd](https://github.com/Peltoche/lsd)
