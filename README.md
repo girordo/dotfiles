@@ -25,14 +25,16 @@
 ![conky](https://github.com/girordo/dotfiles/blob/main/screenshots/conky.png?raw=true)
 
 <h2>𝖎𝖓𝖘𝖙𝖆𝖑𝖑𝖊𝖉</h2>
+
 ![bat](https://github.com/sharkdp/bat)
-![ranger](https://github.com/ranger/ranger)
 ![conky](https://github.com/brndnmtthws/conky)
+![curl](https://github.com/curl/curl)
 ![lsd](https://github.com/Peltoche/lsd)
 ![kitty](https://github.com/kovidgoyal/kitty)
 ![neofetch](https://github.com/dylanaraps/neofetch)
+![ranger](https://github.com/ranger/ranger)
+![rofi](https://github.com/davatorium/rofi)
 ![wget2](https://gitlab.com/gnuwget/wget2)
-![curl](https://github.com/curl/curl)
 
 <h2>𝖜𝖍𝖆𝖙 𝖙𝖔 𝖉𝖔 𝖓𝖊𝖝𝖙</h2>
 
