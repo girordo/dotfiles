@@ -35,6 +35,7 @@
 [neofetch](https://github.com/dylanaraps/neofetch)
 [ranger](https://github.com/ranger/ranger)
 [rofi](https://github.com/davatorium/rofi)
+[tty-clock](https://github.com/xorg62/tty-clock)
 [wget2](https://gitlab.com/gnuwget/wget2)
 
 <h2>𝖜𝖍𝖆𝖙 𝖙𝖔 𝖉𝖔 𝖓𝖊𝖝𝖙</h2>
