@@ -29,6 +29,7 @@
 [bat](https://github.com/sharkdp/bat)
 [conky](https://github.com/brndnmtthws/conky)
 [curl](https://github.com/curl/curl)
+[gtop](https://github.com/aksakalli/gtop)
 [lsd](https://github.com/Peltoche/lsd)
 [kitty](https://github.com/kovidgoyal/kitty)
 [neofetch](https://github.com/dylanaraps/neofetch)
