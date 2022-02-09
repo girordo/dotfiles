@@ -1,9 +1,6 @@
 <section align="center">
+
 <img src="https://github.com/girordo/dotfiles/blob/main/assets/dotfiles.png?raw=true" alt="dotfiles logo"/>
-  
-<a href="https://gitmoji.dev">
-  <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
-</a>
 
 <h1>𝕬𝖇𝖔𝖚𝖙</h1>
 
