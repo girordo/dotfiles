@@ -34,9 +34,11 @@
 [rofi](https://github.com/davatorium/rofi)
 [tty-clock](https://github.com/xorg62/tty-clock)
 [wget2](https://gitlab.com/gnuwget/wget2)
+[picom](https://github.com/yshui/picom)
 
 <h2>𝖜𝖍𝖆𝖙 𝖙𝖔 𝖉𝖔 𝖓𝖊𝖝𝖙</h2>
 
 neovim?
+I'm testing picom now
 
 </section>
