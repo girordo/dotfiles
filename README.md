@@ -39,6 +39,5 @@
 <h2>𝖜𝖍𝖆𝖙 𝖙𝖔 𝖉𝖔 𝖓𝖊𝖝𝖙</h2>
 
 neovim?
-I'm testing picom now
 
 </section>
