@@ -36,10 +36,10 @@
 [wget2](https://gitlab.com/gnuwget/wget2)
 [picom](https://github.com/yshui/picom)
 [elixir-custom-plugin-oh-my-zsh](https://github.com/gusaiani/elixir-oh-my-zsh.git)
-chkrootkit
-rkhunter
-clamav
-lynis
+[chkrootkit](http://www.chkrootkit.org/)
+[rkhunter](https://rkhunter.sourceforge.net/)
+[clamav](https://www.clamav.net/)
+[lynis](https://github.com/CISOfy/lynis)
 
 <h2>𝖜𝖍𝖆𝖙 𝖙𝖔 𝖉𝖔 𝖓𝖊𝖝𝖙</h2>
 
