@@ -70,7 +70,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git asdf elixir)
+plugins=(git asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 SPACESHIP_USER_SHOW=always
 SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_CHAR_SYMBOL="❯"
+SPACESHIP_CHAR_SYMBOL="λ"
 SPACESHIP_CHAR_SUFFIX=" "
 
 export NVM_DIR="$HOME/.nvm"
