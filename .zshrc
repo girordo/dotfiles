@@ -121,6 +121,7 @@ alias lle='lsd -la --date=relative --sort=extension --group-dirs=first'
 alias la='lsd -a'
 alias l='lsd -l'
 alias lt='lsd --tree'
+alias v='nvim'
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
