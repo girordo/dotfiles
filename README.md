@@ -31,6 +31,7 @@
 [kitty](https://github.com/kovidgoyal/kitty)
 [neofetch](https://github.com/dylanaraps/neofetch)
 [ranger](https://github.com/ranger/ranger)
+[httpie](https://httpie.io/)
 [rofi](https://github.com/davatorium/rofi)
 [tty-clock](https://github.com/xorg62/tty-clock)
 [wget2](https://gitlab.com/gnuwget/wget2)
