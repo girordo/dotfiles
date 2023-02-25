@@ -122,9 +122,16 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
-
-
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
+#Aliases
+
+alias bat='batcat'
+alias ll='lsd -la'
+alias lld='lsd -la --date=relative --group-dirs=first'
+alias lle='lsd -la --date=relative --sort=extension --group-dirs=first'
+alias la='lsd -a'
+alias l='lsd -l'
+alias lt='lsd --tree'
