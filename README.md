@@ -33,18 +33,11 @@
 [ranger](https://github.com/ranger/ranger)
 [httpie](https://httpie.io/)
 [rofi](https://github.com/davatorium/rofi)
-[tty-clock](https://github.com/xorg62/tty-clock)
 [wget2](https://gitlab.com/gnuwget/wget2)
-[picom](https://github.com/yshui/picom)
-[elixir-custom-plugin-oh-my-zsh](https://github.com/gusaiani/elixir-oh-my-zsh.git)
 [chkrootkit](http://www.chkrootkit.org/)
 [rkhunter](https://rkhunter.sourceforge.net/)
 [clamav](https://www.clamav.net/)
 [lynis](https://github.com/CISOfy/lynis)
-
-<h2>𝖜𝖍𝖆𝖙 𝖙𝖔 𝖉𝖔 𝖓𝖊𝖝𝖙</h2>
-
-neovim?
 
 </section>
 
