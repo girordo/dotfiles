@@ -70,7 +70,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git asdf httpie)
+plugins=(git asdf httpie jq last-working-dir)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -135,3 +135,12 @@ alias lle='lsd -la --date=relative --sort=extension --group-dirs=first'
 alias la='lsd -a'
 alias l='lsd -l'
 alias lt='lsd --tree'
+alias vim='nvim'
+
+# pnpm
+export PNPM_HOME="/home/giroldo/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
