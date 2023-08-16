@@ -9,11 +9,10 @@ SPACESHIP_PROMPT_ORDER=(
   git           # Git section (git_branch + git_status)
   package        # Package version
   node           # Node.js section
-  bun           # Bunsection
+  bun            # Bun section
   elixir         # Elixir section
   erlang         # Erlang section
   rust           # Rust section
-  python           # Python section
   docker         # Docker section
   docker_compose # Docker section
   terraform     # Terraform section
