@@ -34,7 +34,6 @@
 [httpie](https://httpie.io/)
 [rofi](https://github.com/davatorium/rofi)
 [wget2](https://gitlab.com/gnuwget/wget2)
-[chkrootkit](http://www.chkrootkit.org/)
 [rkhunter](https://rkhunter.sourceforge.net/)
 [clamav](https://www.clamav.net/)
 [lynis](https://github.com/CISOfy/lynis)
