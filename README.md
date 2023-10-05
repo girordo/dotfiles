@@ -17,24 +17,20 @@
 
 ![kitty](https://github.com/girordo/dotfiles/blob/main/screenshots/kitty.png?raw=true)
 
-<h2>𝖈𝖔𝖓𝖐𝖞</h2>
-
-![conky](https://github.com/girordo/dotfiles/blob/main/screenshots/conky.png?raw=true)
-
 <h2>𝖎𝖓𝖘𝖙𝖆𝖑𝖑𝖊𝖉</h2>
 
 [bat](https://github.com/sharkdp/bat)
-[conky](https://github.com/brndnmtthws/conky)
-[curl](https://github.com/curl/curl)
-[gtop](https://github.com/aksakalli/gtop)
 [lsd](https://github.com/Peltoche/lsd)
+[fd](https://github.com/sharkdp/fd)
+[sd](https://github.com/chmln/sd)
+[xh](https://github.com/ducaale/xh)
+[sd](https://github.com/chmln/sd)
+[jql](https://github.com/yamafaktory/jql)
+[bottom](https://github.com/ClementTsang/bottom)
 [kitty](https://github.com/kovidgoyal/kitty)
 [neofetch](https://github.com/dylanaraps/neofetch)
 [ranger](https://github.com/ranger/ranger)
-[httpie](https://httpie.io/)
 [rofi](https://github.com/davatorium/rofi)
-[wget2](https://gitlab.com/gnuwget/wget2)
-[rkhunter](https://rkhunter.sourceforge.net/)
 [clamav](https://www.clamav.net/)
 [lynis](https://github.com/CISOfy/lynis)
 
