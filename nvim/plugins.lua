@@ -34,7 +34,9 @@ local plugins = {
     opts = {
       overrides.mason,
       ensure_installed = {
+        -- rust stuff
         "rust-analyzer",
+
         -- lua stuff
         "lua-language-server",
         "stylua",
@@ -52,11 +54,7 @@ local plugins = {
         "bash-language-server",
         "shfmt",
         "shellcheck",
-
-        -- python
-        "pyright",
-        "black",
-
+        
         -- terraform
         "terraform-ls",
 
