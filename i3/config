@@ -504,6 +504,10 @@ exec --no-startup-id greenclip daemon
 
 exec setxkbmap -layout us -variant intl
 
+# Keyboard xset
+
+exec --no-startup-id xset r rate 300 50
+
 # xsettings
 
 exec --no-startup-id xsettingsd
