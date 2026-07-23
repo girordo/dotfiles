@@ -1,3 +1,6 @@
+DISABLE_AUTO_UPDATE="true"
+DISABLE_MAGIC_FUNCTIONS="true"
+DISABLE_COMPFIX="true"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -70,7 +73,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git asdf)
+plugins=(git fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,6 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+SPACESHIP_PROMPT_ASYNC=false
+
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
     print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
@@ -126,17 +131,6 @@ zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
-#Aliases
-
-alias bat='batcat'
-alias ll='lsd -la'
-alias lld='lsd -la --date=relative --group-dirs=first'
-alias lle='lsd -la --date=relative --sort=extension --group-dirs=first'
-alias la='lsd -a'
-alias l='lsd -l'
-alias lt='lsd --tree'
-alias vim='nvim'
-
 # pnpm
 export PNPM_HOME="/home/giroldo/.local/share/pnpm"
 case ":$PATH:" in
@@ -144,3 +138,51 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+[[ "$TERM" == "xterm-kitty" ]] && alias ssh="TERM=xterm-256color ssh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+#Aliases
+
+alias ll='lsd -la'
+alias lld='lsd -la --date=relative --group-dirs=first'
+alias lle='lsd -la --date=relative --sort=extension --group-dirs=first'
+alias la='lsd -a'
+alias l='lsd -l'
+alias lt='lsd --tree'
+alias fd='fdfind'
+
+# Functions
+
+openz() {
+  zathura "$@" >/dev/null 2>&1 & disown
+}
+
+lxl() { lite-xl "$@" >/dev/null 2>&1 & disown }
+
+export POETRY_ENV_USE_SYSTEM_PYTHON=false
+export POETRY_VIRTUALENVS_IN_PROJECT=true
+
+export PATH="/home/giroldo/.local/bin:$PATH"
+
+# bun completions
+[ -s "/home/giroldo/.bun/_bun" ] && source "/home/giroldo/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# opencode
+export PATH=/home/giroldo/.opencode/bin:$PATH
+export PATH=$PATH:$HOME/.local/bin
