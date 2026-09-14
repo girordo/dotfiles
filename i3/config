@@ -472,7 +472,7 @@ exec feh --bg-fill $HOME/Pictures/wallpaper/lofi-background.jpg
 
 exec --no-startup-id picom
 
-exec_always --no-startup-id xsetroot -Bibata-Modern-Ice left_ptr
+exec_always --no-startup-id xsetroot -cursor_name left_ptr
 
 # Redshift
 

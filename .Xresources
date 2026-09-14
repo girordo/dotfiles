@@ -35,3 +35,7 @@
 ! white
 *.color7:       #2a2f36
 *.color15:      #2c333a
+
+! Xcursor
+Xcursor.theme: Bibata-Modern-Ice
+Xcursor.size: 24

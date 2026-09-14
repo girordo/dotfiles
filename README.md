@@ -12,16 +12,39 @@ nvim
 yazi
 greenclip
 redshift
+lightdm & slick-greeter
 [bat](https://github.com/sharkdp/bat)
 [lsd](https://github.com/Peltoche/lsd)
 [fd](https://github.com/sharkdp/fd)
 [sd](https://github.com/chmln/sd)
 [xh](https://github.com/ducaale/xh)
-[sd](https://github.com/chmln/sd)
 [kitty](https://github.com/kovidgoyal/kitty)
 [rofi](https://github.com/davatorium/rofi)
+[Bibata Modern Ice Cursor](https://github.com/ful1e5/Bibata_Cursor)
 
 </section>
+
+## Setup no Laptop
+
+Para replicar as configurações do Desktop em uma nova máquina (ex.: Laptop):
+
+### 1. Cursor (Bibata-Modern-Ice)
+Execute o script para baixar o tema de cursor e aplicar as configurações de usuário (`~/.Xresources`, `~/.profile`, GTK 3/4 e `xsettingsd`):
+```bash
+./scripts/install-cursor.sh
+```
+> Opcional: Para disponibilizar o cursor também na tela de login, execute `./scripts/install-cursor.sh --system` (ou `sudo ./scripts/install-cursor.sh`).
+
+### 2. Tela de Login (LightDM + Slick Greeter)
+Instala e configura o LightDM, Slick Greeter e o papel de parede `lofi-background.jpg`:
+```bash
+sudo ./scripts/setup-login.sh
+```
+Para testar a tela de login sem reiniciar:
+```bash
+slick-greeter --test-mode
+```
+
 
 ## License
 
