@@ -442,7 +442,8 @@ bindsym $sup+Ctrl+w exec feh --bg-fill $HOME/Pictures/wallpaper/lofi-background.
 
 # Power management
 
-bindsym $sup+l exec dm-tool switch-to-greeter
+bindsym $sup+l exec --no-startup-id betterlockscreen -l blur
+#bindsym $sup+l exec dm-tool switch-to-greeter
 
 # bindsym $sup+Shift+l exec $HOME/.homemade/bin/system/power-management-w-i3lock suspend
 
