@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# Script de Configuração da Tela de Login (LightDM + Slick Greeter)
-# Dotfiles - Referência do Desktop para Laptop
+# Login Screen Configuration Script (LightDM + Slick Greeter)
+# Dotfiles - Desktop reference for Laptop
 # ==============================================================================
 set -euo pipefail
 
@@ -20,7 +20,7 @@ fi
 
 echo "==> [Login Screen] Configurando LightDM e Slick Greeter..."
 
-# 1. Instalação dos pacotes necessários de acordo com a distribuição
+# 1. Install required packages based on distribution
 if command -v dnf >/dev/null 2>&1; then
     echo "==> [Login Screen] Detectado Fedora/RPM. Instalando pacotes necessários..."
     dnf install -y lightdm slick-greeter lightdm-settings
@@ -35,7 +35,7 @@ else
     echo "==> [Aviso] Gerenciador de pacotes não detectado automaticamente. Certifique-se de instalar 'lightdm' e 'slick-greeter'."
 fi
 
-# 2. Configura o wallpaper de fundo
+# 2. Configure background wallpaper
 echo "==> [Login Screen] Copiando papel de parede para /usr/share/backgrounds/..."
 mkdir -p /usr/share/backgrounds
 if [ -f "${DOTFILES_DIR}/wallpapers/lofi-background.jpg" ]; then
@@ -46,7 +46,7 @@ else
     exit 1
 fi
 
-# 3. Configura o LightDM e o Slick Greeter
+# 3. Configure LightDM and Slick Greeter
 echo "==> [Login Screen] Instalando configurações em /etc/lightdm/..."
 mkdir -p /etc/lightdm/lightdm.conf.d
 
@@ -58,14 +58,14 @@ if [ -f "${DOTFILES_DIR}/lightdm/90-slick-greeter.conf" ]; then
     cp -f "${DOTFILES_DIR}/lightdm/90-slick-greeter.conf" /etc/lightdm/lightdm.conf.d/90-slick-greeter.conf
 fi
 
-# 4. Disponibiliza o cursor Bibata para a tela de login se encontrado no usuário
+# 4. Make Bibata cursor available for the login screen if found in user home
 if [ -n "${USER_HOME}" ] && [ -d "${USER_HOME}/.icons/Bibata-Modern-Ice" ]; then
     echo "==> [Login Screen] Copiando tema Bibata-Modern-Ice para /usr/share/icons/..."
     mkdir -p /usr/share/icons
     cp -rf "${USER_HOME}/.icons/Bibata-Modern-Ice" /usr/share/icons/
 fi
 
-# 5. Habilita o LightDM no systemd
+# 5. Enable LightDM in systemd
 echo "==> [Login Screen] Habilitando serviço lightdm.service..."
 systemctl enable lightdm.service
 
