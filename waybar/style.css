@@ -1,0 +1,87 @@
+/* Waybar stylesheet matching i3/i3status color scheme */
+
+@define-color bg #04080d;
+@define-color fg #dddfe1;
+@define-color color0 #656972;
+@define-color color1 #d077a3;
+@define-color color2 #b3bbc3;
+@define-color color3 #aec795;
+@define-color color4 #ae95c7;
+@define-color color5 #95c7ae;
+@define-color color6 #95aec7;
+@define-color color7 #2a2f36;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Hack Nerd Font", "Roboto Mono Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @bg;
+    color: @fg;
+    border-top: 1px solid #1a202c;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background-color: @bg;
+    color: @fg;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    color: @color4;
+    border-bottom: 2px solid @color4;
+}
+
+#workspaces button.urgent {
+    color: @color1;
+    border-bottom: 2px solid @color1;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background-color: #121820;
+}
+
+#mode {
+    background-color: @color1;
+    color: @bg;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+#battery,
+#pulseaudio,
+#disk,
+#network,
+#clock,
+#tray {
+    padding: 0 10px;
+    color: @color2;
+}
+
+#battery.warning {
+    color: @color5;
+}
+
+#battery.critical {
+    color: @color1;
+}
+
+#pulseaudio.muted {
+    color: @color0;
+}
+
+#network.disconnected {
+    color: @color1;
+}
+
+#tray {
+    padding-right: 12px;
+}

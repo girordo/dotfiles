@@ -7,6 +7,8 @@ Simple dotfiles
 
 <h2>𝖎𝖓𝖘𝖙𝖆𝖑𝖑𝖊𝖉</h2>
 i3wm
+sway
+waybar
 picom
 nvim
 yazi
@@ -43,6 +45,17 @@ sudo ./scripts/setup-login.sh
 Para testar a tela de login sem reiniciar:
 ```bash
 slick-greeter --test-mode
+```
+
+### 3. Sway & Waybar (Wayland)
+Para instalar os pacotes do ecossistema Wayland (Sway, Waybar, cliphist, grim, slurp, gammastep, etc.) e aplicar os links simbólicos de configuração (`~/.config/sway` e `~/.config/waybar`):
+```bash
+./scripts/setup-sway.sh
+```
+
+Para habilitar suporte nativo a **animações, cantos arredondados, sombras e blur**, instale o **SwayFX**:
+```bash
+./scripts/setup-sway.sh --fx
 ```
 
 

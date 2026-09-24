@@ -1,0 +1,283 @@
+# Sway config file
+# Converted and adapted from i3 config
+# Reference: man 5 sway
+
+### Font
+font pango:Hack Nerd Font 10
+
+### Mod Key
+set $sup Mod4
+
+### Floating modifier
+floating_modifier $sup
+
+### Default apps
+set $term kitty
+set $filemanager thunar
+set $browser firefox-esr
+set $browser_alt chromium
+
+# Application keybindings
+bindsym $sup+Return exec $term
+bindsym $sup+e exec $filemanager
+bindsym $sup+Ctrl+f exec $browser
+bindsym $sup+Ctrl+g exec $browser_alt
+
+# Kill focused window
+bindsym $sup+q kill
+
+# Application launchers (rofi-wayland)
+bindsym $sup+a exec rofi -theme $HOME/.config/rofi/themes/main.rasi -show drun
+bindsym $sup+Tab exec rofi -theme $HOME/.config/rofi/themes/main.rasi -show window
+bindsym $sup+d exec rofi -theme $HOME/.config/rofi/themes/main.rasi -show run
+
+# Clipboard manager (cliphist + rofi)
+bindsym $sup+c exec cliphist list | rofi -dmenu -theme $HOME/.config/rofi/themes/main.rasi -p "Clipboard" | cliphist decode | wl-copy
+
+# Navigation / Focus
+bindsym $sup+Left focus left
+bindsym $sup+Down focus down
+bindsym $sup+Up focus up
+bindsym $sup+Right focus right
+
+# Move focused window
+bindsym $sup+Shift+Left move left
+bindsym $sup+Shift+Down move down
+bindsym $sup+Shift+Up move up
+bindsym $sup+Shift+Right move right
+
+# Split orientation
+bindsym $sup+h split h
+bindsym $sup+v split v
+bindsym $sup+t layout toggle tabbed split
+
+# Fullscreen
+bindsym $sup+f fullscreen toggle
+
+# Toggle floating
+bindsym $sup+space floating toggle
+
+# Scratchpad
+bindsym $sup+Shift+minus move scratchpad
+bindsym $sup+minus scratchpad show
+
+### Workspaces
+set $ws1 "1  "
+set $ws2 "2  "
+set $ws3 "3  "
+set $ws4 "4  "
+set $ws5 "5  "
+set $ws6 "6  "
+set $ws7 "7  "
+set $ws8 "8  "
+set $ws9 "9  "
+set $ws10 "10  "
+
+# Switch to workspace
+bindsym $sup+1 workspace number $ws1
+bindsym $sup+2 workspace number $ws2
+bindsym $sup+3 workspace number $ws3
+bindsym $sup+4 workspace number $ws4
+bindsym $sup+5 workspace number $ws5
+bindsym $sup+6 workspace number $ws6
+bindsym $sup+7 workspace number $ws7
+bindsym $sup+8 workspace number $ws8
+bindsym $sup+9 workspace number $ws9
+bindsym $sup+0 workspace number $ws10
+
+# Next / Prev workspace
+bindsym $sup+Ctrl+Right workspace next
+bindsym $sup+Ctrl+Left workspace prev
+
+# Move focused container to workspace
+bindsym $sup+Shift+1 move container to workspace number $ws1
+bindsym $sup+Shift+2 move container to workspace number $ws2
+bindsym $sup+Shift+3 move container to workspace number $ws3
+bindsym $sup+Shift+4 move container to workspace number $ws4
+bindsym $sup+Shift+5 move container to workspace number $ws5
+bindsym $sup+Shift+6 move container to workspace number $ws6
+bindsym $sup+Shift+7 move container to workspace number $ws7
+bindsym $sup+Shift+8 move container to workspace number $ws8
+bindsym $sup+Shift+9 move container to workspace number $ws9
+bindsym $sup+Shift+0 move container to workspace number $ws10
+
+# Move focused container to workspace and switch to it
+bindsym $sup+Shift+Ctrl+1 move container to workspace number $ws1; workspace number $ws1
+bindsym $sup+Shift+Ctrl+2 move container to workspace number $ws2; workspace number $ws2
+bindsym $sup+Shift+Ctrl+3 move container to workspace number $ws3; workspace number $ws3
+bindsym $sup+Shift+Ctrl+4 move container to workspace number $ws4; workspace number $ws4
+bindsym $sup+Shift+Ctrl+5 move container to workspace number $ws5; workspace number $ws5
+bindsym $sup+Shift+Ctrl+6 move container to workspace number $ws6; workspace number $ws6
+bindsym $sup+Shift+Ctrl+7 move container to workspace number $ws7; workspace number $ws7
+bindsym $sup+Shift+Ctrl+8 move container to workspace number $ws8; workspace number $ws8
+bindsym $sup+Shift+Ctrl+9 move container to workspace number $ws9; workspace number $ws9
+bindsym $sup+Shift+Ctrl+0 move container to workspace number $ws10; workspace number $ws10
+
+# Moving workspaces to different screens / outputs
+bindsym $sup+Shift+Ctrl+Right move workspace to output right
+bindsym $sup+Shift+Ctrl+Left move workspace to output left
+bindsym $sup+Shift+Ctrl+Up move workspace to output up
+bindsym $sup+Shift+Ctrl+Down move workspace to output down
+
+# Reload / Restart / Exit Sway
+bindsym $sup+Shift+c reload
+bindsym $sup+Shift+r reload
+bindsym $sup+Shift+Escape exec swaynag -t warning -m 'Do you really want to exit sway?' -B 'Yes, exit sway' 'swaymsg exit'
+
+### Resize mode
+mode "resize" {
+    bindsym Left resize shrink width 10 px
+    bindsym Down resize grow height 10 px
+    bindsym Up resize shrink height 10 px
+    bindsym Right resize grow width 10 px
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $sup+r mode "default"
+}
+bindsym $sup+r mode "resize"
+
+### Media & Hardware keys
+bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
+bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
+bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+bindsym XF86AudioPlay exec "playerctl play-pause"
+
+# Screen brightness controls
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+
+# Screenshot (grim + slurp)
+bindsym --release $sup+Print exec grim -g "$(slurp)" - | wl-copy
+
+# Wallpaper reset
+bindsym $sup+Ctrl+w exec swaymsg 'output * bg $HOME/Pictures/wallpaper/lofi-background.jpg fill'
+
+# Lockscreen & Power management
+bindsym $sup+l exec swaylock -f -c 04080d --ring-color ae95c7 --key-hl-color b3bbc3 --line-color 00000000 --inside-color 04080d88
+bindsym $sup+Ctrl+Shift+r exec sudo reboot
+bindsym $sup+Ctrl+Shift+p exec sudo poweroff
+
+# Toggle Waybar
+bindsym $sup+b exec killall -SIGUSR1 waybar
+
+### Input configuration (Keyboard & Touchpad)
+input "type:keyboard" {
+    # Layout ABNT2 (padrão Brasil)
+    xkb_layout "br"
+    
+    # Teclado US Internacional (descomente caso use teclado padrão US):
+    # xkb_layout "us"
+    # xkb_variant "intl"
+
+    repeat_delay 300
+    repeat_rate 50
+}
+
+input "type:touchpad" {
+    dwt enabled
+    tap enabled
+    natural_scroll enabled
+    middle_emulation enabled
+}
+
+### Seat / Cursor settings
+seat seat0 xcursor_theme Bibata-Modern-Ice 24
+
+### Window look & feel
+default_border pixel 1
+default_floating_border pixel 1
+hide_edge_borders smart
+title_align center
+
+# Gaps
+smart_gaps on
+gaps inner 8
+gaps outer 4
+bindsym $sup+Ctrl+Shift+n gaps inner current set 0; gaps outer current set 0
+bindsym $sup+Ctrl+Shift+g gaps inner current set 8; gaps outer current set 4
+
+### SwayFX Visual Effects (Cantos, Sombras e Blur)
+# Cantos arredondados (equivalente ao picom corner-radius)
+corner_radius 10
+smart_corner_radius enable
+
+# Sombras (drop shadows)
+shadows enable
+shadow_blur_radius 14
+shadow_color #000000bb
+shadow_offset -7 -7
+
+# Blur / Desfoque de fundo
+blur enable
+blur_xray disable
+blur_passes 2
+blur_radius 4
+
+# Dimming em janelas inativas (equivalente ao inactive-opacity)
+default_dim_inactive 0.1
+
+# Layout defaults for specific workspaces
+for_window [workspace="1"] layout tabbed
+for_window [workspace="10"] layout tabbed
+
+# Floating rules & window criteria
+floating_maximum_size 1280 x 720
+for_window [app_id="gnome-terminal-server"] floating enable
+for_window [app_id="python"] floating enable
+for_window [app_id="org.gnome.NautilusPreviewer"] floating disable, resize set 600
+for_window [app_id="pavucontrol"] floating enable
+
+### Color Palette (Palenight / .Xresources)
+set $bg      #04080d
+set $fg      #dddfe1
+set $color0  #656972
+set $color1  #d077a3
+set $color2  #b3bbc3
+set $color3  #aec795
+set $color4  #ae95c7
+set $color5  #95c7ae
+set $color6  #95aec7
+set $color7  #2a2f36
+set $color8  #656972
+set $color9  #d077a3
+set $color10 #b3bbc3
+set $color11 #aec795
+set $color12 #ae95c7
+set $color13 #95c7ae
+set $color14 #95aec7
+set $color15 #2c333a
+
+# Window border colors (class border bg text indicator child_border)
+client.focused          #323232 #323232 #ffffff $color2 $color4
+client.focused_inactive #333333 #5f676a #ffffff #484e50 #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e #222222
+client.urgent           #2f343a #900000 #ffffff #900000 #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000 #0c0c0c
+client.background       #000000
+
+### Outputs (Monitores)
+# Papel de parede padrão para qualquer saída conectada
+output * bg $HOME/Pictures/wallpaper/lofi-background.jpg fill
+
+# Setup Desktop Dual Monitor (descomente e ajuste os nomes das saídas com `swaymsg -t get_outputs`):
+# output DP-1 resolution 2560x1440@165Hz position 0 0
+# output HDMI-A-1 transform 90 position 2560 0
+
+### Autostart
+# Gerenciador de rede (applet da bandeja)
+exec nm-applet --indicator
+
+# Notificações (Dunst Wayland)
+exec dunst
+
+# Gerenciador de área de transferência
+exec wl-paste --watch cliphist store
+
+# Temperatura de cor (Gammastep - substituto do Redshift)
+exec gammastep -l 21.19:47.98
+
+# Status bar (Waybar)
+bar {
+    swaybar_command waybar
+}

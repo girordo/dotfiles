@@ -1,0 +1,72 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 26,
+    "spacing": 8,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "battery",
+        "pulseaudio",
+        "disk",
+        "network",
+        "clock#date",
+        "clock#time",
+        "tray"
+    ],
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "婢 ({volume}%)",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "disk": {
+        "interval": 30,
+        "format": " {free}/{total}",
+        "path": "/"
+    },
+    "network": {
+        "format-wifi": " {essid} ({ipaddr})",
+        "format-ethernet": " {bandwidthDownBits} {ipaddr}",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "睊 Desconectado",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "clock#date": {
+        "format": " {:%d/%m/%Y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "clock#time": {
+        "interval": 1,
+        "format": " {:%H:%M:%S}"
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    }
+}
